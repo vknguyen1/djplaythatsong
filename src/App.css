@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Add some basic styling to the nav bar */
+nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the logo element */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img {
+  height: 30px;
+}
+
+/* Style the title element */
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+/* Style the menu items element */
+.menu-items {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Style the menu items */
+.menu-items a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+/* Style the song list */
+.songlist {
+  display: flex;
+  width: 25%;
+}
+.songlist ul {
+  list-style: none;
+}
+
+/* spotify player */
+
+.spotify_player {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  width: 50%;
+}
+
+.menu-items a:hover {
+  color: #ccc;
 }
